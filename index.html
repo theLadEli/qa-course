@@ -1,30 +1,38 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eli - QA Lab Sessions</title>
-    <link rel="icon" type="image/x-icon" href="Assets/Favicon.svg">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eli - QA Lab Sessions</title>
+  <link rel="icon" type="image/x-icon" href="Assets/Favicon.svg">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+  </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   
+
   <section id="menu">
     <div class="container">
       <header class="d-flex justify-content-center py-3">
@@ -40,9 +48,11 @@
 
 
   <section id="hero-section">
-      <h1>QA Course Labs</h1>
-      <p>Just a simple one-page website for my QA Course Labs. Throughout the site you will find all the functionality the lab outlines intergrated in this website. I have also added Documentation sections to explain why and how I did things.</p>
-      <button class="hero-button" onclick="location.href='#sign-up'">Scroll to content</button>
+    <h1>QA Course Labs</h1>
+    <p>Just a simple one-page website for my QA Course Labs. Throughout the site you will find all the functionality the
+      lab outlines intergrated in this website. I have also added Documentation sections to explain why and how I did
+      things.</p>
+    <button class="hero-button" onclick="location.href='#sign-up'">Scroll to content</button>
   </section>
 
   <section class="documentation" id="website-documentation">
@@ -57,7 +67,8 @@
       <li>Bootstrap (CSS Framework)</li>
     </ul>
     <p>
-      It is hosted on <a href="https://github.com/theLadEli/qa-course">GitHub</a>. I used Bootstrap as a framework due to it's easy to use column and section structure, along with the mobile friendliness of it all.
+      It is hosted on <a href="https://github.com/theLadEli/qa-course">GitHub</a>. I used Bootstrap as a framework due
+      to it's easy to use column and section structure, along with the mobile friendliness of it all.
     </p>
   </section>
 
@@ -73,31 +84,31 @@
         <div class="col-md-6">
           <h2>Sign up for more information.</h2>
           <p>Stay up to date with the latest news and information by subscribing below</p>
-  
+
           <form id="myForm" onsubmit="formSubmission(event)">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
-              
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-              
-              <label for="subject">Subject</label>
-              <select id="subject" name="subject" required>
-                  <option value="">Select your query subject</option>
-                  <option value="Option 1">Just testing</option>
-                  <option value="Option 2">Found a mistake</option>
-                  <option value="Option 3">Got a suggestion</option>
-                  <option value="Other">Other</option>
-              </select>
-              
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-              
-              <label>
-                  <input type="checkbox" name="agree" required> I agree to the terms and conditions.
-              </label>
-              
-              <button type="submit" onclick="storeName()">Submit</button>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select your query subject</option>
+              <option value="Option 1">Just testing</option>
+              <option value="Option 2">Found a mistake</option>
+              <option value="Option 3">Got a suggestion</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label>
+              <input type="checkbox" name="agree" required> I agree to the terms and conditions.
+            </label>
+
+            <button type="submit" onclick="storeName()">Submit</button>
           </form>
         </div>
       </div>
@@ -108,7 +119,11 @@
   <section class="documentation" id="form-documentation">
     <h3>Documentation:</h3>
     <p>
-      Above I have created a form with multiple form fields. On form submit the <code>formmSubmission(event)</code> function is called, along with an <code>onclick</code> event that's added to the Submit button, this calls the <code>storeName</code> function. The <code>storeName</code> uses DOM to get the value of the Name field and set it to a variable. Next, then the <code>formSubmission</code> function removes the default form submit settings, displays an alert with some text and resets the form.
+      Above I have created a form with multiple form fields. On form submit the <code>formmSubmission(event)</code>
+      function is called, along with an <code>onclick</code> event that's added to the Submit button, this calls the
+      <code>storeName</code> function. The <code>storeName</code> uses DOM to get the value of the Name field and set it
+      to a variable. Next, then the <code>formSubmission</code> function removes the default form submit settings,
+      displays an alert with some text and resets the form.
     </p>
   </section>
 
@@ -118,14 +133,47 @@
     <p>By entering the number 5 in the below field, you will change the light from red to green!</p>
 
     <form id="conditionalForm" onsubmit="conditionalForm()">
-      <input type="number" name="" id="conditional-number">        
+      <input type="number" name="" id="conditional-number">
       <button type="submit">Submit</button>
     </form>
 
     <h2 id="conditional-red">Status: 🔴</h1>
-    <h2 id="conditional-green" class="conditional-logic-green">Status: 🟢</h1>
+      <h2 id="conditional-green" class="conditional-logic-green">Status: 🟢</h1>
   </section>
+
+  <section class="documentation" id="conditional-logic-documentation">
+    <h3>Documentation:</h3>
+    <p>
+      The conditional logic form works by having two elements, one with the green circle emoji, the other with a red circle emoji. There are also two classes that target each emoji and set them to hidden. By default, when you load onto the page the red emoji has no class but the green emoji has the class that sets it to hidden.
+    </p>
+
+    <p>
+      In JavaScript I created an <code>if else</code> statement that add the red emoji class if the number is five, this sets the red emoji to hidden. It then removes the green emoji's hidden class.
+    </p>
+
+    <p>
+      The code looks like so:
+    </p>
+    <pre>
+      <code>
+        var conditionalNumber = document.getElementById("conditional-number").value;
+        console.log(conditionalNumber)
+    
+        if (conditionalNumber == 5) {
+            console.log("submitted 5");
+            document.getElementById("conditional-red").classList.add('conditional-logic-red');
+            document.getElementById("conditional-green").classList.remove('conditional-logic-green');
+        } else if (conditionalNumber > 5 || conditionalNumber < 5) {
+            document.getElementById("conditional-red").classList.remove('conditional-logic-red');
+            document.getElementById("conditional-green").classList.add('conditional-logic-green');
+        }
+      </code>
+    </pre>
+  </section>
+
+
 
   <script src="index.js"></script>
 </body>
+
 </html>

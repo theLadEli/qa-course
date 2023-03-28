@@ -1,6 +1,8 @@
 /* Global Styles*/
 
-h1, h2, p {
+h1,
+h2,
+p {
 	font-family: 'Montserrat', sans-serif;
 	color: #222831;
 }
@@ -83,7 +85,7 @@ button:hover {
 
 /* Sign-up Documentation */
 
-.documentation  {
+.documentation {
 	text-align: left;
 	margin: 4% 15% 4% 15%;
 	padding: 30px;
@@ -95,7 +97,7 @@ button:hover {
 	font-weight: bold;
 }
 
-.documentation p{
+.documentation p {
 	font-family: 'Overpass Mono', monospace;
 }
 
@@ -111,23 +113,27 @@ button:hover {
 }
 
 .contact-desktop {
-	display: block; /* show the desktop image by default */
-  }
-  
-  .contact-mobile {
-	display: none; /* hide the mobile image by default */
-  }
-  
-  @media (max-width: 767px) {
+	display: block;
+	/* show the desktop image by default */
+}
+
+.contact-mobile {
+	display: none;
+	/* hide the mobile image by default */
+}
+
+@media (max-width: 767px) {
+
 	/* show the mobile image on screens up to 767px */
 	.contact-desktop {
-	  display: none;
+		display: none;
 	}
+
 	.contact-mobile {
-	  display: block;
+		display: block;
 	}
-  }
-  
+}
+
 
 form label,
 form input,
@@ -148,11 +154,16 @@ form textarea {
 	padding: 10px 20px;
 }
 
-form input[type="email"]:hover, form input[type="email"]:focus,
-form input[type="text"]:hover, form input[type="text"]:focus,
-form input[type="number"]:hover, form input[type="number"]:focus,
-form select:hover, form select:focus,
-form textarea:hover, form textarea:focus {
+form input[type="email"]:hover,
+form input[type="email"]:focus,
+form input[type="text"]:hover,
+form input[type="text"]:focus,
+form input[type="number"]:hover,
+form input[type="number"]:focus,
+form select:hover,
+form select:focus,
+form textarea:hover,
+form textarea:focus {
 	border: solid #00ADB5 2px;
 }
 
@@ -183,13 +194,13 @@ form button {
 #conditional-logic {
 	text-align: center;
 	padding: 5% 25%;
-	margin: 10% 0;
+	margin: 5% 0;
 	background-color: #EEEEEE;
 }
 
 #conditionalForm {
 	column-gap: 0;
-	padding: 3% 0	;
+	padding: 3% 0;
 }
 
 #conditionalForm input {
@@ -202,7 +213,7 @@ form button {
 	border: solid #e6e9f0 2px;
 	vertical-align: middle;
 	text-align: center;
-	font-weight: bold	;
+	font-weight: bold;
 }
 
 #conditionalForm button {
@@ -214,11 +225,15 @@ form button {
 	margin: 0;
 	vertical-align: middle;
 }
-  
+
 .conditional-logic-red {
 	display: none;
 }
 
 .conditional-logic-green {
 	display: none;
+}
+
+#conditional-logic-documentation {
+	padding-bottom: 0;
 }
