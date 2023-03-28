@@ -46,21 +46,27 @@ button:hover {
 
 
 /* Hero Section */
+
 #hero-section {
 	background-color: #EEEEEE;
 	text-align: center;
 	padding: 15% 0;
 }
 
-
-
 #hero-section button {
 	margin-top: 50px;
 }
 
+
 /* Sign-up Section */
+
 #sign-up {
 	padding: 10% 0;
+}
+
+.contact-column-left {
+	display: flex;
+	align-items: flex-end;
 }
 
 form label,
@@ -107,9 +113,4 @@ form label {
 form button {
 	margin-top: 25px;
 	width: 100%;
-}
-
-.contact-column-left {
-	display: flex;
-	align-items: flex-end;
 }
