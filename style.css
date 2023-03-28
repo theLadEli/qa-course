@@ -114,12 +114,10 @@ button:hover {
 
 .contact-desktop {
 	display: block;
-	/* show the desktop image by default */
 }
 
 .contact-mobile {
 	display: none;
-	/* hide the mobile image by default */
 }
 
 @media (max-width: 767px) {
@@ -236,4 +234,34 @@ form button {
 
 #conditional-logic-documentation {
 	padding-bottom: 0;
+}
+
+
+/* JS Loops */
+
+#js-loops {
+	padding: 5% 0;
+}
+
+.loop-left-column {
+	padding-right: 90px;
+}
+
+.loop-right-column {
+	display: flex;
+	align-items: flex-end;
+}
+
+#while-loop-output {
+	border-radius: 8px;
+	border: solid #e6e9f0 2px;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
+
+.loop-button {
+	width: 100%;
+	margin-top: 15px;
 }

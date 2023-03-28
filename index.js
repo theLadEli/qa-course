@@ -26,3 +26,22 @@ function conditionalForm() {
         document.getElementById("conditional-green").classList.add('conditional-logic-green');
     }
 }
+
+
+function startWhileLoop() {
+    var loopCount = 0;
+    var loopOutput = '';
+    
+    function loop() {
+      if (loopCount <= 10) {
+        loopOutput += 'The count is ' + loopCount + '<br>';
+        loopCount++;
+        document.getElementById('while-loop-output').innerHTML = loopOutput;
+        setTimeout(loop, 300);
+      }
+    }
+    
+    loop();
+  }
+  
+

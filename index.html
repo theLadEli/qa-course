@@ -124,13 +124,15 @@
       <code>storeName</code> function. The <code>storeName</code> uses DOM to get the value of the Name field and set it
       to a variable. Next, then the <code>formSubmission</code> function removes the default form submit settings,
       displays an alert with some text and resets the form.
+      <br><br>
+      <b>Note: This form does not store entires, this can be accomplished using PHP</b>
     </p>
   </section>
 
 
   <section id="conditional-logic">
     <h2>Conditional Logic</h2>
-    <p>By entering the number 5 in the below field, you will change the light from red to green!</p>
+    <p>By entering the number 5 in the below field, you will change the status light from red to green!</p>
 
     <form id="conditionalForm" onsubmit="conditionalForm()">
       <input type="number" name="" id="conditional-number">
@@ -172,6 +174,31 @@
   </section>
 
 
+
+  <section id="js-loops">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 loop-left-column">
+
+          <h2>JavaScript Loops</h2>
+          <p>Click the button below to start the <code>while loop</code> which will count till 10.</p>
+      
+          <div id="while-loop-output">Press the button...</div>
+          <button onclick="startWhileLoop()" class="loop-button">Start While Loop</button>
+
+        </div>
+
+        <div class="col-md-6 loop-right-column">
+          <img src="Assets/loop.png" alt="An image showing a map to try and visualize a loop">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="js-loops">
+
+  </section>
 
   <script src="index.js"></script>
 </body>
