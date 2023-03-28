@@ -43,5 +43,4 @@ function startWhileLoop() {
     
     loop();
   }
-  
-
+ 
