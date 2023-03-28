@@ -83,7 +83,7 @@ button:hover {
 
 /* Sign-up Documentation */
 
-#documentation  {
+.documentation  {
 	text-align: left;
 	margin: 4% 15% 4% 15%;
 	padding: 30px;
@@ -95,7 +95,7 @@ button:hover {
 	font-weight: bold;
 }
 
-#documentation p{
+.documentation p{
 	font-family: 'Overpass Mono', monospace;
 }
 
