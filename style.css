@@ -1,0 +1,115 @@
+/* Global Styles*/
+
+h1, h2, p {
+	font-family: 'Montserrat', sans-serif;
+	color: #222831;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 55px;
+	line-height: 75px;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 50px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 18px;
+	color: #393E46;
+}
+
+img {
+	width: 80%;
+}
+
+button {
+	padding: 15px 65px;
+	border-radius: 58px;
+	background-color: #00ADB5;
+	border: solid 3px #00ADB5;
+	color: #F6F1F1;
+	text-transform: capitalize;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+button:hover {
+	background-color: #00acb500;
+	border: solid 3px #00ADB5;
+	color: #00ADB5;
+}
+
+
+/* Hero Section */
+#hero-section {
+	background-color: #EEEEEE;
+	text-align: center;
+	padding: 15% 0;
+}
+
+
+
+#hero-section button {
+	margin-top: 50px;
+}
+
+/* Sign-up Section */
+#sign-up {
+	padding: 10% 0;
+}
+
+form label,
+form input,
+form select,
+form textarea {
+	display: block;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+	border: solid #e6e9f0 1px;
+	border-radius: 8px;
+	padding: 10px 20px;
+}
+
+form input[type="email"]:hover, form input[type="email"]:focus,
+form input[type="text"]:hover, form input[type="text"]:focus,
+form select:hover, form select:focus,
+form textarea:hover, form textarea:focus {
+	border: solid #00ADB5 2px;
+}
+
+form textarea {
+	height: 150px;
+}
+
+form input[type="checkbox"] {
+	width: fit-content;
+	display: inline;
+}
+
+form label {
+	font-weight: 600;
+	font-size: 14px;
+	color: #00adb5;
+	margin-bottom: 5px;
+}
+
+form button {
+	margin-top: 25px;
+	width: 100%;
+}
+
+.contact-column-left {
+	display: flex;
+	align-items: flex-end;
+}
