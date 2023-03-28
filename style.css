@@ -92,6 +92,25 @@ button:hover {
 	align-items: flex-end;
 }
 
+.contact-desktop {
+	display: block; /* show the desktop image by default */
+  }
+  
+  .contact-mobile {
+	display: none; /* hide the mobile image by default */
+  }
+  
+  @media (max-width: 767px) {
+	/* show the mobile image on screens up to 767px */
+	.contact-desktop {
+	  display: none;
+	}
+	.contact-mobile {
+	  display: block;
+	}
+  }
+  
+
 form label,
 form input,
 form select,
