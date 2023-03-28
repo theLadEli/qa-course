@@ -19,56 +19,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
+  <section id="menu">
+    <div class="container">
+      <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#hero-section" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#sign-up" class="nav-link">Contact</a></li>
+        </ul>
+      </header>
+    </div>
+  </section>
 
-    <section id="hero-section">
-        <h1>QA Course Labs</h1>
-        <p>Just a simple one-page website for my QA Course Labs.</p>
-        <button class="hero-button">Scroll to content</button>
-    </section>
 
+  <section id="hero-section">
+      <h1>QA Course Labs</h1>
+      <p>Just a simple one-page website for my QA Course Labs.</p>
+      <button class="hero-button" onclick="location.href='#sign-up'">Scroll to content</button>
+  </section>
 
-    <section id="sign-up">
+  <section id="sign-up">
 
-        <div class="container">
-            <div class="row">
-              <div class="col-md-6 contact-column-left">
-                <img src="Assets/cotnact.png" alt="A mailbox">
-              </div>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-6 contact-column-left">
+              <img src="Assets/cotnact.png" alt="A mailbox">
+            </div>
 
-              <div class="col-md-6">
-                <h2>Sign up for more information.</h2>
-                <p>Stay up to date with the latest news and information by subscribing below</p>
-        
-                <form id="myForm" onsubmit="formSubmission(event)">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="subject">Subject</label>
-                    <select id="subject" name="subject" required>
-                        <option value="">Select your query subject</option>
-                        <option value="Option 1">Just testing</option>
-                        <option value="Option 2">Found a mistake</option>
-                        <option value="Option 3">Got a suggestion</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                    
-                    <label>
-                        <input type="checkbox" name="agree" required> I agree to the terms and conditions.
-                    </label>
-                    
-                    <button type="submit">Submit</button>
-                </form>
-              </div>
+            <div class="col-md-6">
+              <h2>Sign up for more information.</h2>
+              <p>Stay up to date with the latest news and information by subscribing below</p>
+      
+              <form id="myForm" onsubmit="formSubmission(event)">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                  
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                  
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject" required>
+                      <option value="">Select your query subject</option>
+                      <option value="Option 1">Just testing</option>
+                      <option value="Option 2">Found a mistake</option>
+                      <option value="Option 3">Got a suggestion</option>
+                      <option value="Other">Other</option>
+                  </select>
+                  
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                  
+                  <label>
+                      <input type="checkbox" name="agree" required> I agree to the terms and conditions.
+                  </label>
+                  
+                  <button type="submit">Submit</button>
+              </form>
             </div>
           </div>
+        </div>
 
-    </section>
+  </section>
 
   <script src="index.js"></script>
 </body>

@@ -45,6 +45,29 @@ button:hover {
 }
 
 
+/* Menu */
+
+#menu {
+	background-color: #222831;
+}
+
+.nav-link {
+	text-transform: capitalize;
+	color: #F6F1F1;
+	text-transform: capitalize;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.nav-link:hover {
+	color: #00ADB5;
+}
+
+.nav-link.active {
+	background-color: #00ADB5 !important;
+}
+
+
 /* Hero Section */
 
 #hero-section {
