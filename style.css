@@ -73,7 +73,7 @@ button:hover {
 #hero-section {
 	background-color: #EEEEEE;
 	text-align: center;
-	padding: 15% 0;
+	padding: 15% 25%;
 }
 
 #hero-section button {
@@ -81,10 +81,28 @@ button:hover {
 }
 
 
+/* Sign-up Documentation */
+
+#documentation  {
+	text-align: left;
+	margin: 4% 15% 4% 15%;
+	padding: 30px;
+	border: solid 1px #393E46;
+	background-color: #EEEEEE65;
+	border-radius: 8px;
+
+	font-family: 'Overpass Mono', monospace;
+	font-weight: bold;
+}
+
+#documentation p{
+	font-family: 'Overpass Mono', monospace;
+}
+
 /* Sign-up Section */
 
 #sign-up {
-	padding: 10% 0;
+	padding: 5% 0;
 }
 
 .contact-column-left {

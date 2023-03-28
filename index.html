@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -34,54 +38,78 @@
 
   <section id="hero-section">
       <h1>QA Course Labs</h1>
-      <p>Just a simple one-page website for my QA Course Labs.</p>
+      <p>Just a simple one-page website for my QA Course Labs. Throughout the site you will find all the functionality the lab outlines intergrated in this website. I have also added Documentation sections to explain why and how I did things.</p>
       <button class="hero-button" onclick="location.href='#sign-up'">Scroll to content</button>
+  </section>
+
+  <section id="documentation">
+    <h3>Documentation:</h3>
+    <p>
+      This website is using:
+    </p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap (CSS Framework)</li>
+    </ul>
+    <p>
+      It is hosted on <a href="https://github.com/theLadEli/qa-course">GitHub</a>. I used Bootstrap as a framework due to it's easy to use column and section structure, along with the mobile friendliness of it all.
+    </p>
   </section>
 
   <section id="sign-up">
 
-      <div class="container">
-          <div class="row">
-            <div class="col-md-6 contact-column-left">
-              <img src="Assets/contact.png" alt="A mailbox" class="contact-desktop">
-              <img src="Assets/contact_mobile.png" alt="A mailbox" class="contact-mobile">
-            </div>
-
-            <div class="col-md-6">
-              <h2>Sign up for more information.</h2>
-              <p>Stay up to date with the latest news and information by subscribing below</p>
-      
-              <form id="myForm" onsubmit="formSubmission(event)">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required>
-                  
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required>
-                  
-                  <label for="subject">Subject</label>
-                  <select id="subject" name="subject" required>
-                      <option value="">Select your query subject</option>
-                      <option value="Option 1">Just testing</option>
-                      <option value="Option 2">Found a mistake</option>
-                      <option value="Option 3">Got a suggestion</option>
-                      <option value="Other">Other</option>
-                  </select>
-                  
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" required></textarea>
-                  
-                  <label>
-                      <input type="checkbox" name="agree" required> I agree to the terms and conditions.
-                  </label>
-                  
-                  <button type="submit" onclick="storeName()">Submit</button>
-              </form>
-            </div>
-          </div>
+    <div class="sign-up-container container">
+      <div class="row">
+        <div class="col-md-6 contact-column-left">
+          <img src="Assets/contact.png" alt="A mailbox" class="contact-desktop">
+          <img src="Assets/contact_mobile.png" alt="A mailbox" class="contact-mobile">
         </div>
+
+        <div class="col-md-6">
+          <h2>Sign up for more information.</h2>
+          <p>Stay up to date with the latest news and information by subscribing below</p>
+  
+          <form id="myForm" onsubmit="formSubmission(event)">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                  <option value="">Select your query subject</option>
+                  <option value="Option 1">Just testing</option>
+                  <option value="Option 2">Found a mistake</option>
+                  <option value="Option 3">Got a suggestion</option>
+                  <option value="Other">Other</option>
+              </select>
+              
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+              
+              <label>
+                  <input type="checkbox" name="agree" required> I agree to the terms and conditions.
+              </label>
+              
+              <button type="submit" onclick="storeName()">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
   </section>
 
+  <section id="documentation">
+    <h3>Documentation:</h3>
+    <p>
+      Above I have created a form with multiple form fields. On form submit the <b>formmSubmission(event)</b> function is called, along with an <b>onclick</b> event that's added to the Submit button, this calls the <b>storeName</b> function. The <b>storeName</b> uses DOM to get the value of the Name field and set it to a variable. Next, then the <b>formSubmission</b> function removes the default form submit settings, displays an alert with some text and resets the form.
+    </p>
+  </section>
+
+  
   <script src="index.js"></script>
 </body>
 </html>
