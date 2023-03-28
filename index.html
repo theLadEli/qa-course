@@ -39,7 +39,7 @@
                 <h2>Sign up for more information.</h2>
                 <p>Stay up to date with the latest news and information by subscribing below</p>
         
-                <form action="submit.php" method="POST">
+                <form id="myForm" onsubmit="formSubmission(event)">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
                     
@@ -70,6 +70,6 @@
 
     </section>
 
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
