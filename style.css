@@ -140,6 +140,7 @@ form textarea {
 
 form input[type="text"],
 form input[type="email"],
+form input[type="number"],
 form select,
 form textarea {
 	border: solid #e6e9f0 1px;
@@ -149,6 +150,7 @@ form textarea {
 
 form input[type="email"]:hover, form input[type="email"]:focus,
 form input[type="text"]:hover, form input[type="text"]:focus,
+form input[type="number"]:hover, form input[type="number"]:focus,
 form select:hover, form select:focus,
 form textarea:hover, form textarea:focus {
 	border: solid #00ADB5 2px;
@@ -173,4 +175,50 @@ form label {
 form button {
 	margin-top: 25px;
 	width: 100%;
+}
+
+
+/* Conditional Logic */
+
+#conditional-logic {
+	text-align: center;
+	padding: 5% 25%;
+	margin: 10% 0;
+	background-color: #EEEEEE;
+}
+
+#conditionalForm {
+	column-gap: 0;
+	padding: 3% 0	;
+}
+
+#conditionalForm input {
+	display: inline;
+	width: auto;
+	height: 65px;
+	line-height: 65px;
+	border-radius: 58px 0 0 58px;
+	margin: 0;
+	border: solid #e6e9f0 2px;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold	;
+}
+
+#conditionalForm button {
+	display: inline;
+	width: auto;
+	height: 65px;
+	/* line-height: 65px; */
+	border-radius: 0 58px 58px 0;
+	margin: 0;
+	vertical-align: middle;
+}
+  
+.conditional-logic-red {
+	display: none;
+}
+
+.conditional-logic-green {
+	display: none;
 }

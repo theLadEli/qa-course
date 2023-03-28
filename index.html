@@ -108,11 +108,24 @@
   <section class="documentation" id="form-documentation">
     <h3>Documentation:</h3>
     <p>
-      Above I have created a form with multiple form fields. On form submit the <b>formmSubmission(event)</b> function is called, along with an <b>onclick</b> event that's added to the Submit button, this calls the <b>storeName</b> function. The <b>storeName</b> uses DOM to get the value of the Name field and set it to a variable. Next, then the <b>formSubmission</b> function removes the default form submit settings, displays an alert with some text and resets the form.
+      Above I have created a form with multiple form fields. On form submit the <code>formmSubmission(event)</code> function is called, along with an <code>onclick</code> event that's added to the Submit button, this calls the <code>storeName</code> function. The <code>storeName</code> uses DOM to get the value of the Name field and set it to a variable. Next, then the <code>formSubmission</code> function removes the default form submit settings, displays an alert with some text and resets the form.
     </p>
   </section>
 
-  
+
+  <section id="conditional-logic">
+    <h2>Conditional Logic</h2>
+    <p>By entering the number 5 in the below field, you will change the light from red to green!</p>
+
+    <form id="conditionalForm" onsubmit="conditionalForm()">
+      <input type="number" name="" id="conditional-number">        
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2 id="conditional-red">Status: 🔴</h1>
+    <h2 id="conditional-green" class="conditional-logic-green">Status: 🟢</h1>
+  </section>
+
   <script src="index.js"></script>
 </body>
 </html>

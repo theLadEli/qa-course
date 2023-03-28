@@ -12,3 +12,17 @@ function formSubmission(event) {
     // reset the form
     document.getElementById("myForm").reset();
 }
+
+function conditionalForm() {
+    var conditionalNumber = document.getElementById("conditional-number").value;
+    console.log(conditionalNumber)
+
+    if (conditionalNumber == 5) {
+        console.log("submitted 5");
+        document.getElementById("conditional-red").classList.add('conditional-logic-red');
+        document.getElementById("conditional-green").classList.remove('conditional-logic-green');
+    } else if (conditionalNumber > 5 || conditionalNumber < 5) {
+        document.getElementById("conditional-red").classList.remove('conditional-logic-red');
+        document.getElementById("conditional-green").classList.add('conditional-logic-green');
+    }
+}
