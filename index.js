@@ -14,6 +14,8 @@ function formSubmission(event) {
 }
 
 function conditionalForm() {
+    event.preventDefault();
+    
     var conditionalNumber = document.getElementById("conditional-number").value;
     console.log(conditionalNumber)
 
