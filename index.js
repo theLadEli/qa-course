@@ -45,5 +45,4 @@ function startWhileLoop() {
     
     loop();
   }
-  
-
+ 
