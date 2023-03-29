@@ -82,7 +82,36 @@ button:hover {
 
 .documentation p {
 	font-family: 'Overpass Mono', monospace;
+	font-size: 14px;
 }
+
+/* Code Embeds */
+
+:not(pre)>code[class*=language-], pre[class*=language-] {
+	background-color: #eeeeee;
+}
+
+.code-embeds {
+	margin-bottom: 25px;
+}
+
+.scrollbar-style {
+	border-radius: 8px;
+}
+
+.scrollbar-style::-webkit-scrollbar {
+	width: 6px !important;
+}
+  
+.scrollbar-style::-webkit-scrollbar-track {
+	background: #f1f1f1 !important;
+	margin-top: 8px;
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb {
+	background: #222831 !important;
+	border-radius: 8px;
+}  
 
 /* Hero Section */
 

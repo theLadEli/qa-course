@@ -9,8 +9,7 @@
 
   <!-- Customised Social Sharing -->
   <meta property="og:title" content="QA Software Development Course Examples">
-  <meta property="og:description"
-    content="Just a simple one-page website for my QA Course Labs. Throughout the site you will find all the functionality the lab outlines intergrated in this website. I have also added Documentation sections to explain why and how I did things.">
+  <meta property="og:description" content="Just a simple one-page website for my QA Course Labs. Throughout the site you will find all the functionality the lab outlines intergrated in this website. I have also added Documentation sections to explain why and how I did things.">
   <meta property="og:image" content="https://github.com/theLadEli/qa-course/blob/main/Assets/Image%20Embed.png">
 
 
@@ -24,15 +23,15 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Prism (code syntax highlighting for documentation embeds) -->
+  <link rel="stylesheet" href="prism/prism.css">
+  
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -57,9 +56,11 @@
   <!-- Hero Section -->
   <section id="hero-section">
     <h1>QA Course Labs</h1>
-    <p>Just a simple one-page website for my QA Course Labs. Throughout the site you will find all the functionality the lab outlines intergrated in this website. I have also added Documentation sections to explain why and how I did things.
-    <br><br>
-    If you're looking for some more in-depth JS documentation, checkout the <code>ReadME</code> file in link below!</p>
+    <p>
+      Just a simple one-page website for my QA Course Labs. Throughout the site I intergrated all the functionality outlined in the lab. I have also added Documentation between the sections to explain why and how I did things.
+      <br><br>
+      If you're looking for some more in-depth JS documentation, checkout the <code>ReadME</code> file using the link below. There I have outlined most of the key JavaScript concepts, what they do, along with examples of usage. It's continuously updated, so feel free to star it!
+    </p>
 
     <button class="hero-button-primary" onclick="window.location.href='https://github.com/theLadEli/my-full-stack-journey/tree/main/JavaScript';">JS Documentation</button>
     <button class="hero-button-secondary" onclick="location.href='#sign-up'">Scroll to content</button>
@@ -68,7 +69,7 @@
   <!-- Website Documentation -->
   <section class="documentation" id="website-documentation">
     <h3>Documentation:</h3>
-    <p>This website is using:</p>
+    <p>This website was built using:</p>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
@@ -76,8 +77,8 @@
       <li>Bootstrap (CSS Framework)</li>
     </ul>
     <p>
-      It is hosted on <a href="https://github.com/theLadEli/qa-course">GitHub</a>. I used Bootstrap as a framework due
-      to it's easy to use column and section structure, along with the mobile friendliness of it all.
+      It's hosted on <a href="https://github.com/theLadEli/qa-course">GitHub</a>. I used Bootstrap as a framework due
+      to it's easy to use column & section structure, along with the mobile friendliness of it all.
     </p>
   </section>
 
@@ -92,8 +93,8 @@
         </div>
         <!-- Right Column -->
         <div class="col-md-6">
-          <h2>Sign up for more information.</h2>
-          <p>Stay up to date with the latest news and information by subscribing below</p>
+          <h2>Forms & DOM</h2>
+          <p>Filling out the form below will display a popup showing the submitted values.</p>
 
           <form id="myForm" onsubmit="formSubmission(event)">
             <label for="name">Name</label>
@@ -142,13 +143,110 @@
   <!-- Form Documentation -->
   <section class="documentation" id="form-documentation">
     <h3>Documentation:</h3>
+    <p>In the above form I added multiple fields:</p>
+
+    <ol>
+      <li>Name, it has a field type of <code>text</code></li>
+      <li>Email, it has a field type of <code>email</code></li>
+      <li>Subject, this is not a form field, it's a <code>select</code> element</li>
+      <li>Message, this is also not a form field, it's a <code>textarea</code></li>
+      <li>Agree to T&C's, it has a field type of <code>checkbox</code></li>
+      <li>Button, with the <code>type</code> property set to <code>submit</code></li>
+    </ol>
+
+    <p>The HTML used for the form is here:</p>
+      <div class="code-embeds">
+          <pre class="language-html scrollbar-style" style="overflow-y:scroll; overflow-x: hidden; white-space: pre-wrap; 
+          word-wrap: break-word; height:200px;">
+            <code>
+    &lt;form id="myForm" onsubmit="formSubmission(event)"&gt;
+      &lt;label for="name"&gt;Name&lt;/label&gt;
+      &lt;input type="text" id="name" name="name" required&gt;
+
+      &lt;label for="email"&gt;Email&lt;/label&gt;
+      &lt;input type="email" id="email" name="email" required&gt;
+
+      &lt;label for="subject"&gt;Subject&lt;/label&gt;
+      &lt;select id="subject" name="subject" required&gt;
+        &lt;option value=""&gt;Select your query subject&lt;/option&gt;
+        &lt;option value="Just testing"&gt;Just testing&lt;/option&gt;
+        &lt;option value="Found an error"&gt;Found an error&lt;/option&gt;
+        &lt;option value="Got a suggestion"&gt;Got a suggestion&lt;/option&gt;
+        &lt;option value="Other"&gt;Other&lt;/option&gt;
+      &lt;/select&gt;
+
+      &lt;label for="message"&gt;Message&lt;/label&gt;
+      &lt;textarea id="message" name="message" required&gt;&lt;/textarea&gt;
+
+      &lt;label&gt;
+        &lt;input type="checkbox" name="agree" required&gt; I agree to the terms and conditions.
+      &lt;/label&gt;
+
+      &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+            </code>
+          </pre>   
+      </div>
+
+    <p>Here is the JavaScript used for the form submit actions:</p>
+    <div class="code-embeds">
+      <pre class="language-js scrollbar-style" style="overflow-y:scroll; overflow-x: hidden; white-space: pre-wrap; 
+      word-wrap: break-word; height:200px;">
+        <code>
+          // The below had to be declared outside of the formSubmission function for it to work
+          var yourName;
+          var yourEmail;
+          var yourSubject;
+          var yourMessage;
+          
+          //A function called when the form is submitted
+          function formSubmission(event) {
+              //Prevents the default form submission actions
+              event.preventDefault();
+          
+              //Sets the variable values to the form field values
+              yourName = document.getElementById("name").value;
+              yourEmail = document.getElementById("email").value;
+              yourSubject = document.getElementById("subject").value;
+              yourMessage = document.getElementById("message").value;
+          
+              //Updates the submission toast with the values
+              document.getElementById('toast-submission-details').innerHTML = (`
+                &lt;p style="font-size: 14px;"&gt;
+                  &lt;b>Name:&lt;/b> ${yourName}
+                  &lt;br>&lt;b>Email:&lt;/b&gt; ${yourEmail}
+                  &lt;br>&lt;b>Subject:&lt;/b&gt; ${yourSubject}
+                  &lt;br>&lt;b>Message:&lt;/b&gt; ${yourMessage}
+                &lt;/p&gt;`
+              )
+          
+              //Unhides the toast
+              document.getElementById("form-submit-toast").style.display = "inline";
+          
+              //Resets the form
+              document.getElementById("myForm").reset();
+          }
+          
+          //Exit toast
+          function closeToast(){
+              document.getElementById('form-submit-toast').style.display = 'none';
+          }
+        </code>
+      </pre>   
+  </div>
+
     <p>
-      Above I have created a form with multiple form fields. On form submit the <code>formmSubmission(event)</code>
-      function is called, along with an <code>onclick</code> event that's added to the Submit button, this calls the
-      <code>storeName</code> function. The <code>storeName</code> uses DOM to get the value of the Name field and set it
-      to a variable. Next, then the <code>formSubmission</code> function removes the default form submit settings,
-      displays an alert with some text and resets the form.
-      <br><br>
+      When the form is submitted it calls the <code>formSubmission()</code> function. This function does a few things:
+    </p>
+    <ol style="font-weight: normal;">
+      <li>It first stops the default form submission actions from happening</li>
+      <li>Gets the value of the form fields and saves them to variables</li>
+      <li>Sets the <code>innerHTML</code> of the Form Successfully Submitted popup text to a concatenated version containing all the variables I just created. The popup is still hidden at this point.</li>
+      <li>It unhides the popup by setting its <code>style.display </code>value to <code>inline</code></li>
+      <li>Clears the form</li>
+    </ol>
+
+      <br>
       <b>Note: This form does not store entires, this can be accomplished using PHP</b>
     </p>
   </section>
@@ -260,6 +358,7 @@
   </section>
 
   <script src="script.js"></script>
+  <script src="prism/prism.js"></script>
 </body>
 
 </html>
