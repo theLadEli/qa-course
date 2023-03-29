@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eli - QA Lab Sessions</title>
   <link rel="icon" type="image/x-icon" href="Assets/Favicon.svg">
+
+  <!-- Customised Social Sharing -->
   <meta property="og:title" content="QA Software Development Course Examples">
-  <meta property="og:description" content="Just a simple one-page website for my QA Course Labs. Throughout the site you will find all the functionality the lab outlines intergrated in this website. I have also added Documentation sections to explain why and how I did things.">
+  <meta property="og:description"
+    content="Just a simple one-page website for my QA Course Labs. Throughout the site you will find all the functionality the lab outlines intergrated in this website. I have also added Documentation sections to explain why and how I did things.">
   <meta property="og:image" content="https://github.com/theLadEli/qa-course/blob/main/Assets/Image%20Embed.png">
 
 
@@ -36,12 +39,13 @@
 
 <body>
 
+  <!-- Navbar -->
   <section id="menu">
     <div class="container">
       <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
           <li class="nav-item"><a href="#hero-section" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#sign-up" class="nav-link">Forms</a></li>
+          <li class="nav-item"><a href="#sign-up" class="nav-link">Forms & DOM</a></li>
           <li class="nav-item"><a href="#conditional-logic" class="nav-link">Conditional Logic</a></li>
           <li class="nav-item"><a href="#js-loops" class="nav-link">JS Loops</a></li>
           <li class="nav-item"><a href="#js-events" class="nav-link">Events</a></li>
@@ -50,25 +54,21 @@
     </div>
   </section>
 
-
+  <!-- Hero Section -->
   <section id="hero-section">
     <h1>QA Course Labs</h1>
-    <p>
-      Just a simple one-page website for my QA Course Labs. Throughout the site you will find all the functionality the
-      lab outlines intergrated in this website. I have also added Documentation sections to explain why and how I did
-      things.
-      <br><br>
-      If you're looking for some more in-depth JS documentation, checkout the <code>ReadME</code> file in link below!
-    </p>
-    <button class="hero-button-primary"  onclick="window.location.href='https://github.com/theLadEli/my-full-stack-journey/tree/main/JavaScript';">JS Documentation</button>
+    <p>Just a simple one-page website for my QA Course Labs. Throughout the site you will find all the functionality the lab outlines intergrated in this website. I have also added Documentation sections to explain why and how I did things.
+    <br><br>
+    If you're looking for some more in-depth JS documentation, checkout the <code>ReadME</code> file in link below!</p>
+
+    <button class="hero-button-primary" onclick="window.location.href='https://github.com/theLadEli/my-full-stack-journey/tree/main/JavaScript';">JS Documentation</button>
     <button class="hero-button-secondary" onclick="location.href='#sign-up'">Scroll to content</button>
   </section>
 
+  <!-- Website Documentation -->
   <section class="documentation" id="website-documentation">
     <h3>Documentation:</h3>
-    <p>
-      This website is using:
-    </p>
+    <p>This website is using:</p>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
@@ -81,15 +81,16 @@
     </p>
   </section>
 
+  <!-- Forms & DOM -->
   <section id="sign-up">
-
     <div class="sign-up-container container">
       <div class="row">
+        <!-- Left Column -->
         <div class="col-md-6 contact-column-left">
           <img src="Assets/contact.png" alt="A mailbox" class="contact-desktop">
           <img src="Assets/contact_mobile.png" alt="A mailbox" class="contact-mobile">
         </div>
-
+        <!-- Right Column -->
         <div class="col-md-6">
           <h2>Sign up for more information.</h2>
           <p>Stay up to date with the latest news and information by subscribing below</p>
@@ -104,9 +105,9 @@
             <label for="subject">Subject</label>
             <select id="subject" name="subject" required>
               <option value="">Select your query subject</option>
-              <option value="Option 1">Just testing</option>
-              <option value="Option 2">Found a mistake</option>
-              <option value="Option 3">Got a suggestion</option>
+              <option value="Just testing">Just testing</option>
+              <option value="Found an error">Found an error</option>
+              <option value="Got a suggestion">Got a suggestion</option>
               <option value="Other">Other</option>
             </select>
 
@@ -117,14 +118,28 @@
               <input type="checkbox" name="agree" required> I agree to the terms and conditions.
             </label>
 
-            <button type="submit" onclick="storeName()">Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
     </div>
-
   </section>
 
+  <!-- Form Submission Toast (hidden by default) -->
+  <div id="form-submit-toast">
+    <div id="toast-title">
+      <h2 class="toast-header">Form Submitted!</h2>
+      <a onclick="closeToast()">X</a>
+    </div>
+    <div id="toast-content">
+      <p>Thank you for your submission, your form has submitted successfully. Below are your submission details:</p>
+      <div id="toast-submission-details">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Documentation -->
   <section class="documentation" id="form-documentation">
     <h3>Documentation:</h3>
     <p>
@@ -138,7 +153,7 @@
     </p>
   </section>
 
-
+  <!-- Conditional Logic -->
   <section id="conditional-logic">
     <h2>Conditional Logic</h2>
     <p>By entering the number 5 in the below field, you will change the status light from red to green!</p>
@@ -149,22 +164,25 @@
     </form>
 
     <h2 id="conditional-red">Status: 🔴</h1>
-      <h2 id="conditional-green" class="conditional-logic-green">Status: 🟢</h1>
+    <h2 id="conditional-green" class="conditional-logic-green">Status: 🟢</h1>
   </section>
 
+  <!-- Conditional Logic Documentation -->
   <section class="documentation" id="conditional-logic-documentation">
     <h3>Documentation:</h3>
     <p>
-      The conditional logic form works by having two elements, one with the green circle emoji, the other with a red circle emoji. There are also two classes that target each emoji and set them to hidden. By default, when you load onto the page the red emoji has no class but the green emoji has the class that sets it to hidden.
+      The conditional logic form works by having two elements, one with the green circle emoji, the other with a red
+      circle emoji. There are also two classes that target each emoji and set them to hidden. By default, when you load
+      onto the page the red emoji has no class but the green emoji has the class that sets it to hidden.
     </p>
-
     <p>
-      In JavaScript I created an <code>if else</code> statement that add the red emoji class if the number is five, this sets the red emoji to hidden. It then removes the green emoji's hidden class.
+      In JavaScript I created an <code>if else</code> statement that add the red emoji class if the number is five, this
+      sets the red emoji to hidden. It then removes the green emoji's hidden class.
     </p>
-
     <p>
       The code looks like so:
     </p>
+    <!-- JS Used (visually displayed) -->
     <pre>
       <code>
         var conditionalNumber = document.getElementById("conditional-number").value;
@@ -182,40 +200,40 @@
     </pre>
   </section>
 
-
-
+  <!-- JS Loops -->
   <section id="js-loops">
-
     <div class="container">
       <div class="row">
+        <!-- Left Column -->
         <div class="col-md-6 loop-left-column">
-
           <h2>JavaScript Loops</h2>
           <p>Click the button below to start the <code>while loop</code> which will count till 10.</p>
-      
+
           <div id="while-loop-output">Press the button...</div>
           <button onclick="startWhileLoop()" class="loop-button">Start While Loop</button>
-
         </div>
-
+        <!-- Right Column -->
         <div class="col-md-6 loop-right-column">
           <img src="Assets/loop.png" alt="An image showing a map to try and visualize a loop">
         </div>
       </div>
     </div>
-
   </section>
 
+  <!-- Loop Documentation -->
   <section class="documentation" id="loop-documentation">
     <h3>Documentation:</h3>
     <p>
-      The looping section has two elements, a button and an empty <code>div</code>. When the button is clicked, it calls the <code>startWhileLoop()</code> function. This function has a loop that outputs the value of 0, and then on every loop it adds 1 to it until it reaches 10.
+      The looping section has two elements, a button and an empty <code>div</code>. When the button is clicked, it calls
+      the <code>startWhileLoop()</code> function. This function has a loop that outputs the value of 0, and then on
+      every loop it adds 1 to it until it reaches 10.
       <br><br>
-      <b>Note: The delay between each loop output was added for visual effect, your computer can loop through it in millaseconds so you won't usually see the loop delay.</b>
+      <b>Note: The delay between each loop output was added for visual effect, your computer can loop through it in
+        millaseconds so you won't usually see the loop delay.</b>
     </p>
   </section>
 
-
+  <!-- Js Events -->
   <section id="js-events">
     <h2>JavaScript Events</h2>
     <p id="js-events-p">Click the button below to show or hide this text.</p>
@@ -223,21 +241,25 @@
     <button onclick="hideButton()" class="light-button-secondary">Hide</button>
   </section>
 
+  <!-- JS Events Documentation -->
   <section class="documentation" id="js-events-documentation">
     <h3>Documentation:</h3>
     <p>
       The JavaScript events section has three elements in it:
     </p>
-      <ol>
-        <li>A <code>&ltp&gt;</code> element, it has an id of <code>js-events-p</code></li>
-        <li>A <b>Show</b> button with an <code>onclick</code> event to call the <code>showButton()</code> function</li>
-        <li>A <b>Hide</b> button with an <code>onclick</code> event to call the <code>hideButton()</code> function</li>
-      </ol>
+    <ol>
+      <li>A <code>&ltp&gt;</code> element, it has an id of <code>js-events-p</code></li>
+      <li>A <b>Show</b> button with an <code>onclick</code> event to call the <code>showButton()</code> function</li>
+      <li>A <b>Hide</b> button with an <code>onclick</code> event to call the <code>hideButton()</code> function</li>
+    </ol>
     <p>
-      The <code>showButton()</code> function is a simple JS function that targets the <code>js-events-p</code> class and sets its display to <code>block</code>. The <code>hideButton()</code> function almost the same, except it sets the display to <code>none</code> instead of <code>block</code>.
+      The <code>showButton()</code> function is a simple JS function that targets the <code>js-events-p</code> class and
+      sets its display to <code>block</code>. The <code>hideButton()</code> function almost the same, except it sets the
+      display to <code>none</code> instead of <code>block</code>.
     </p>
   </section>
 
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

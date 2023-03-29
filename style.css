@@ -1,8 +1,6 @@
 /* Global Styles*/
 
-h1,
-h2,
-p {
+h1, h2, p {
 	font-family: 'Montserrat', sans-serif;
 	color: #222831;
 }
@@ -46,7 +44,6 @@ button:hover {
 	color: #00ADB5;
 }
 
-
 /* Menu */
 
 #menu {
@@ -69,6 +66,23 @@ button:hover {
 	background-color: #00ADB5 !important;
 }
 
+/* Documentation */
+
+.documentation {
+	text-align: left;
+	margin: 4% 15% 4% 15%;
+	padding: 30px;
+	border: solid 1px #393E46;
+	background-color: #EEEEEE65;
+	border-radius: 8px;
+
+	font-family: 'Overpass Mono', monospace;
+	font-weight: bold;
+}
+
+.documentation p {
+	font-family: 'Overpass Mono', monospace;
+}
 
 /* Hero Section */
 
@@ -99,25 +113,7 @@ button:hover {
 	color: white;
 }
 
-/* Sign-up Documentation */
-
-.documentation {
-	text-align: left;
-	margin: 4% 15% 4% 15%;
-	padding: 30px;
-	border: solid 1px #393E46;
-	background-color: #EEEEEE65;
-	border-radius: 8px;
-
-	font-family: 'Overpass Mono', monospace;
-	font-weight: bold;
-}
-
-.documentation p {
-	font-family: 'Overpass Mono', monospace;
-}
-
-/* Sign-up Section */
+/* Forms & DOM Section*/
 
 #sign-up {
 	padding: 5% 0;
@@ -136,9 +132,10 @@ button:hover {
 	display: none;
 }
 
+/* Set a different image for mobile and desktop */
 @media (max-width: 767px) {
 
-	/* show the mobile image on screens up to 767px */
+	/* shows the mobile image on screens up to 767px */
 	.contact-desktop {
 		display: none;
 	}
@@ -148,6 +145,7 @@ button:hover {
 	}
 }
 
+/* Forms */
 
 form label,
 form input,
@@ -202,7 +200,6 @@ form button {
 	width: 100%;
 }
 
-
 /* Conditional Logic */
 
 #conditional-logic {
@@ -224,7 +221,8 @@ form button {
 	line-height: 65px;
 	border-radius: 58px 0 0 58px;
 	margin: 0;
-	border: solid #e6e9f0 2px;
+	padding: 0;
+	outline: solid #e6e9f0 2px;
 	vertical-align: middle;
 	text-align: center;
 	font-weight: bold;
@@ -247,11 +245,6 @@ form button {
 .conditional-logic-green {
 	display: none;
 }
-
-#conditional-logic-documentation {
-	padding-bottom: 0;
-}
-
 
 /* JS Loops */
 
@@ -282,12 +275,13 @@ form button {
 	margin-top: 15px;
 }
 
+/* JS Events */
 
-/* Lab 9 */
 #js-events {
 	background-color: #00ADB5;
 	text-align: center;
 	padding: 5%;
+	margin: 5% 0;
 	color: white;
 }
 
@@ -320,4 +314,61 @@ form button {
 	border-color: #EEEEEE;
 	color: #222831;
 	background-color: #EEEEEE;
+}
+
+
+/* Toast */
+
+#form-submit-toast {
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	display: none;
+
+	background-color: #00ADB5;
+	border-radius: 8px;
+	text-align: left;
+	width: 350px;
+
+	-webkit-box-shadow: -12px 10px 71px -40px rgb(128, 128, 128);
+	-moz-box-shadow: -12px 10px 71px -40px rgb(122, 122, 122);
+	box-shadow: -12px 10px 71px -40px rgb(134, 134, 134);
+}
+
+#toast-title {
+	
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0px;
+	margin: 0 20px;
+}
+
+.toast-header {
+	display: inline;
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+#toast-title a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #222831;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+#toast-content {
+	padding: 15px 30px;
+	background-color: #e6e9f0;
+	border: 2px solid #00ADB5;
+	border-radius: 8px;
+}
+
+#toast-submission-details {
+	width: 100%;
+	max-width: 100%;
 }
