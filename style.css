@@ -265,3 +265,43 @@ form button {
 	width: 100%;
 	margin-top: 15px;
 }
+
+
+/* Lab 9 */
+#js-events {
+	background-color: #00ADB5;
+	text-align: center;
+	padding: 5%;
+	color: white;
+}
+
+#js-events-p {
+	font-weight: 400;
+	color: #EEEEEE;
+	margin-bottom: 50px;
+}
+
+.light-button-primary {
+	background-color: #EEEEEE;
+	color: #222831;
+	margin-right: 5px;
+}
+
+.light-button-secondary {
+	border-color: #EEEEEE;
+	color: #EEEEEE;
+	background-color: #EEEEEE00;
+	margin-left: 5px;
+}
+
+.light-button-primary:hover {
+	background-color: #EEEEEE00;
+	color: #EEEEEE	;
+	border-color: #EEEEEE;
+}
+
+.light-button-secondary:hover {
+	border-color: #EEEEEE;
+	color: #222831;
+	background-color: #EEEEEE;
+}

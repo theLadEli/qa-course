@@ -15,7 +15,7 @@ function formSubmission(event) {
 
 function conditionalForm() {
     event.preventDefault();
-    
+
     var conditionalNumber = document.getElementById("conditional-number").value;
     console.log(conditionalNumber)
 
@@ -45,4 +45,13 @@ function startWhileLoop() {
     
     loop();
   }
- 
+
+//Lab 10
+
+function showButton() {
+    document.getElementById('js-events-p').style.display = "block";
+}
+
+function hideButton() {
+    document.getElementById('js-events-p').style.display = "none";
+}

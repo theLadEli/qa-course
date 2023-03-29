@@ -41,6 +41,7 @@
           <li class="nav-item"><a href="#sign-up" class="nav-link">Forms</a></li>
           <li class="nav-item"><a href="#conditional-logic" class="nav-link">Conditional Logic</a></li>
           <li class="nav-item"><a href="#js-loops" class="nav-link">JS Loops</a></li>
+          <li class="nav-item"><a href="#js-events" class="nav-link">Events</a></li>
         </ul>
       </header>
     </div>
@@ -196,9 +197,6 @@
     </div>
 
   </section>
-  <section id="js-loops">
-
-  </section>
 
   <section class="documentation" id="loop-documentation">
     <h3>Documentation:</h3>
@@ -206,6 +204,29 @@
       The looping section has two elements, a button and an empty <code>div</code>. When the button is clicked, it calls the <code>startWhileLoop()</code> function. This function has a loop that outputs the value of 0, and then on every loop it adds 1 to it until it reaches 10.
       <br><br>
       <b>Note: The delay between each loop output was added for visual effect, your computer can loop through it in millaseconds so you won't usually see the loop delay.</b>
+    </p>
+  </section>
+
+
+  <section id="js-events">
+    <h2>JavaScript Events</h2>
+    <p id="js-events-p">Click the button below to show or hide this text.</p>
+    <button onclick="showButton()" class="light-button-primary">Show</button>
+    <button onclick="hideButton()" class="light-button-secondary">Hide</button>
+  </section>
+
+  <section class="documentation" id="js-events-documentation">
+    <h3>Documentation:</h3>
+    <p>
+      The JavaScript events section has three elements in it:
+    </p>
+      <ol>
+        <li>A <code>&ltp&gt;</code> element, it has an id of <code>js-events-p</code></li>
+        <li>A <b>Show</b> button with an <code>onclick</code> event to call the <code>showButton()</code> function</li>
+        <li>A <b>Hide</b> button with an <code>onclick</code> event to call the <code>hideButton()</code> function</li>
+      </ol>
+    <p>
+      The <code>showButton()</code> function is a simple JS function that targets the <code>js-events-p</code> class and sets its display to <code>block</code>. The <code>hideButton()</code> function almost the same, except it sets the display to <code>none</code> instead of <code>block</code>.
     </p>
   </section>
 
