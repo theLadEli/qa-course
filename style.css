@@ -82,6 +82,22 @@ button:hover {
 	margin-top: 50px;
 }
 
+.hero-button-primary {
+	margin-right: 5px;
+}
+
+.hero-button-secondary {
+	border-color: #00ADB5;
+	background-color: #e6e9f000;
+	color: #00ADB5;
+	margin-left: 5px;
+}
+
+.hero-button-secondary:hover {
+	border-color: #00ADB5;
+	background-color: #00ADB5;
+	color: white;
+}
 
 /* Sign-up Documentation */
 

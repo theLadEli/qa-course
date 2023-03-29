@@ -46,7 +46,7 @@ function startWhileLoop() {
     loop();
   }
 
-//Lab 10
+// Events
 
 function showButton() {
     document.getElementById('js-events-p').style.display = "block";
