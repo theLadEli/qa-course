@@ -352,9 +352,40 @@
   <section class="documentation" id="loop-documentation">
     <h3>Documentation:</h3>
     <p>
-      The looping section has two elements, a button and an empty <code>div</code>. When the button is clicked, it calls
-      the <code>startWhileLoop()</code> function. This function has a loop that outputs the value of 0, and then on
-      every loop it adds 1 to it until it reaches 10.
+      The looping section has two elements, an empty <code>div</code> for the looping output and a button to call the <code>startWhileLoop()</code> function on click.
+    </p>
+    <p>The<code> startWhileLoop()</code> function declares two variables:</p>
+      <pre class="language-js scrollbar-style" style="overflow-y:scroll; overflow-x: hidden; white-space: pre-wrap; 
+      word-wrap: break-word; max-height:200px;">
+        <code>
+          function startWhileLoop() {
+            var loopCount = 0;
+            var loopOutput = '';
+          }
+        </code>
+      </pre> 
+      <br><br>
+      <p>
+        Next it has a nested loop function has an <code>if</code> statement in it. If <code>loopCount</code> is less or equal to 10 it adds to the <code>loopOutput</code> variable, adds 1 to <code>loopCount</code> and then updates the <code>div</code>s inneHTML. Lastly, for visual effect, I added a 300ms delay before it calls the loop function once again.
+      </p>
+
+      <pre class="language-js scrollbar-style" style="overflow-y:scroll; overflow-x: hidden; white-space: pre-wrap; 
+      word-wrap: break-word; max-height:200px;">
+        <code>
+          function loop() {
+            //A loop to continuously update the loop output div until the loopCount variable is 10
+            if (loopCount &lt;= 10) {
+            loopOutput += 'The count is ' + loopCount + '&lt;br&gt;';
+            loopCount++;
+            document.getElementById('while-loop-output').innerHTML = loopOutput;
+            //An artificial delay between the loops for visual effect
+            setTimeout(loop, 300);
+            }
+        }
+        
+        loop();
+        </code>
+      </pre> 
       <br><br>
       <b>Note: The delay between each loop output was added for visual effect, your computer can loop through it in
         millaseconds so you won't usually see the loop delay.</b>
