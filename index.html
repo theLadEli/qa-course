@@ -261,41 +261,71 @@
       <button type="submit">Submit</button>
     </form>
 
-    <h2 id="conditional-red">Status: 🔴</h1>
-    <h2 id="conditional-green" class="conditional-logic-green">Status: 🟢</h1>
+    <h2 id="conditional-red">Status: 🔴</h2>
+    <h2 id="conditional-green" class="conditional-logic-green">Status: 🟢</h2>
   </section>
 
   <!-- Conditional Logic Documentation -->
   <section class="documentation" id="conditional-logic-documentation">
     <h3>Documentation:</h3>
     <p>
-      The conditional logic form works by having two elements, one with the green circle emoji, the other with a red
-      circle emoji. There are also two classes that target each emoji and set them to hidden. By default, when you load
-      onto the page the red emoji has no class but the green emoji has the class that sets it to hidden.
+      In order for the conditional logic to work, there are two elements:
     </p>
+
+    <pre class="language-html scrollbar-style" style="overflow-y:scroll; overflow-x: hidden; white-space: pre-wrap; 
+      word-wrap: break-word; max-height:200px;">
+        <code>          
+          &lt;h2 id="conditional-red">Status: 🔴&lt;/h2&gt;
+          &lt;h2 id="conditional-green" class="conditional-logic-green">Status: 🟢&lt;/h2&gt;
+        </code>
+      </pre>   
+
     <p>
-      In JavaScript I created an <code>if else</code> statement that add the red emoji class if the number is five, this
-      sets the red emoji to hidden. It then removes the green emoji's hidden class.
+      When you load the page, the green light has the class <code>conditional-logic-green</code> which sets it to hidden.
+      <br><br>
+      The form has one number input field and a submit button:
     </p>
-    <p>
-      The code looks like so:
-    </p>
-    <!-- JS Used (visually displayed) -->
-    <pre>
-      <code>
-        var conditionalNumber = document.getElementById("conditional-number").value;
-        console.log(conditionalNumber)
-    
-        if (conditionalNumber == 5) {
-            console.log("submitted 5");
-            document.getElementById("conditional-red").classList.add('conditional-logic-red');
-            document.getElementById("conditional-green").classList.remove('conditional-logic-green');
-        } else if (conditionalNumber > 5 || conditionalNumber < 5) {
-            document.getElementById("conditional-red").classList.remove('conditional-logic-red');
-            document.getElementById("conditional-green").classList.add('conditional-logic-green');
+
+    <pre class="language-html scrollbar-style" style="overflow-y:scroll; overflow-x: hidden; white-space: pre-wrap; 
+      word-wrap: break-word; max-height:200px;">
+        <code>
+          &lt;form id="conditionalForm" onsubmit="conditionalForm()"&gt;
+            &lt;input type="number" name="" id="conditional-number"&gt;
+            &lt;button type="submit">Submit&lt;/button&gt;
+          &lt;/form&gt;
+        </code>
+      </pre>  
+
+      <p>
+        <br><br>On submit, the <code>conditionalForm()</code> function is called. The function looks like this:
+      </p>
+
+      <pre class="language-js scrollbar-style" style="overflow-y:scroll; overflow-x: hidden; white-space: pre-wrap; 
+      word-wrap: break-word; max-height:200px;">
+        <code>
+          function conditionalForm() {
+            //Prevents the default form submission actions
+            event.preventDefault();
+        
+            //Gets the value of the number field
+            var conditionalNumber = document.getElementById("conditional-number").value;
+        
+            //Updates the appropriate class depending on what the number is
+            if (conditionalNumber == 5) {
+                console.log("submitted 5");
+                document.getElementById("conditional-red").classList.add('conditional-logic-red');
+                document.getElementById("conditional-green").classList.remove('conditional-logic-green');
+            } else if (conditionalNumber > 5 || conditionalNumber &lt; 5) {
+                document.getElementById("conditional-red").classList.remove('conditional-logic-red');
+                document.getElementById("conditional-green").classList.add('conditional-logic-green');
+            }
         }
-      </code>
-    </pre>
+        </code>
+      </pre>  
+
+      <p>
+        It gets the value of the number field and then using an <code>if else</code> statement checks if it is 5, if it is it adds a class to the red light element that set it to hidden and removes the class from the green light element. If it is more or less than 5, it removes the class from the red light and adds it to the green light.
+      </p>
   </section>
 
   <!-- JS Loops -->
