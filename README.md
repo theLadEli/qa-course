@@ -4,27 +4,25 @@ This project is an interactive JavaScript website that demonstrates various conc
 
 
 ## Table of Contents
-
 - [Web Fundamentals Course](#web-fundamentals-course)
-  - [Table of Contents](#table-of-contents)
-  - [Tech Stack](#tech-stack)
-  - [Contributing](#contributing)
-    - [How to contribute](#how-to-contribute)
-      - [Step 1: Fork the repository](#step-1-fork-the-repository)
-      - [Step 2: Clone the forked repository](#step-2-clone-the-forked-repository)
-      - [Step 3: Create a new branch](#step-3-create-a-new-branch)
-      - [Step 4: Make changes and commit](#step-4-make-changes-and-commit)
-      - [Step 5: Push your changes](#step-5-push-your-changes)
-      - [Step 6: Create a pull request](#step-6-create-a-pull-request)
-      - [Step 7: Address feedback (if necessary)](#step-7-address-feedback-if-necessary)
-  - [Project Overview](#project-overview)
-    - [Forms \& DOM](#forms--dom)
-    - [Conditional Logic](#conditional-logic)
-    - [Loops](#loops)
-    - [Events](#events)
-    - [API Requests](#api-requests)
-  - [Getting Started](#getting-started)
-  - [Contributing](#contributing-1)
+  * [Tech Stack](#tech-stack)
+  * [Contributing](#contributing)
+    + [How to contribute](#how-to-contribute)
+      - [Step 1: Fork the repository](#step-1--fork-the-repository)
+      - [Step 2: Clone the forked repository](#step-2--clone-the-forked-repository)
+      - [Step 3: Create a new branch](#step-3--create-a-new-branch)
+      - [Step 4: Make changes and commit](#step-4--make-changes-and-commit)
+      - [Step 5: Push your changes](#step-5--push-your-changes)
+      - [Step 6: Create a pull request](#step-6--create-a-pull-request)
+      - [Step 7: Address feedback (if necessary)](#step-7--address-feedback--if-necessary-)
+  * [Project Overview](#project-overview)
+    + [Forms & DOM](#forms---dom)
+    + [Conditional Logic](#conditional-logic)
+    + [Loops](#loops)
+    + [Events](#events)
+    + [API Requests](#api-requests)
+  * [Getting Started](#getting-started)
+  * [Contributing](#contributing-1)
 
 ## Tech Stack
 
@@ -117,4 +115,4 @@ To get started with the project, clone the repository and open `index.html` in y
 
 ## Contributing
 
-Contributions to improve the project or expand the documentation are encouraged! To contribute,
+Did I miss anything? Scroll back up to the top of the page and feel free to contribute using the instructions provided. Thanks!
