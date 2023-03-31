@@ -2,13 +2,21 @@
 
 This project is an interactive JavaScript website that demonstrates various concepts and functionalities taught in the QA Web Fundamentals course. The primary goal of this project is to help beginners understand how JavaScript can be used to add interactivity and dynamic content to a webpage.
 
-Contributions are welcomed! If you have suggestions for improvements or additional documentation, please feel free to submit a pull request or open an issue.
 
 ## Table of Contents
 
 - [Web Fundamentals Course](#web-fundamentals-course)
   - [Table of Contents](#table-of-contents)
   - [Tech Stack](#tech-stack)
+  - [Contributing](#contributing)
+    - [How to contribute](#how-to-contribute)
+      - [Step 1: Fork the repository](#step-1-fork-the-repository)
+      - [Step 2: Clone the forked repository](#step-2-clone-the-forked-repository)
+      - [Step 3: Create a new branch](#step-3-create-a-new-branch)
+      - [Step 4: Make changes and commit](#step-4-make-changes-and-commit)
+      - [Step 5: Push your changes](#step-5-push-your-changes)
+      - [Step 6: Create a pull request](#step-6-create-a-pull-request)
+      - [Step 7: Address feedback (if necessary)](#step-7-address-feedback-if-necessary)
   - [Project Overview](#project-overview)
     - [Forms \& DOM](#forms--dom)
     - [Conditional Logic](#conditional-logic)
@@ -16,13 +24,64 @@ Contributions are welcomed! If you have suggestions for improvements or addition
     - [Events](#events)
     - [API Requests](#api-requests)
   - [Getting Started](#getting-started)
-  - [Contributing](#contributing)
+  - [Contributing](#contributing-1)
 
 ## Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
+
+## Contributing
+Contributions are welcome! If you have suggestions for improvements or additional documentation, please feel free to submit a pull request or open an issue.
+
+**Some things that could be improved**
+ - Mobile optimization
+ - Expanded documentation
+
+You can also add to the above list if I missed anything.
+
+### How to contribute
+
+#### Step 1: Fork the repository
+To start working on the project, first create your own fork of the repository by clicking the "Fork" button on the top right corner of the repository's main page. This will create a copy of the repository under your own GitHub account.
+
+#### Step 2: Clone the forked repository
+Now, clone the forked repository to your local machine using the following command:
+```
+git clone https://github.com/theLadEli/qa-course.git
+```
+
+#### Step 3: Create a new branch
+It's a good practice to create a new branch for each new feature or bugfix. To create a new branch, navigate to the local repository and execute the following command:
+```
+git checkout -b your-new-branch-name
+```
+Replace `your-new-branch-name` with a descriptive name for your branch.
+
+#### Step 4: Make changes and commit
+Work on the project, make your changes, and then commit them. Make sure to write a clear and concise commit message describing your changes. To commit your changes, use the following commands:
+```
+git add .
+git commit -m "Your commit message here"
+```
+
+#### Step 5: Push your changes
+Push your changes to your fork on GitHub by executing the following command:
+```
+git push origin your-new-branch-name
+```
+Replace `your-new-branch-name` with the name of the branch you created earlier.
+
+#### Step 6: Create a pull request
+Once you've pushed your changes, navigate to the original repository on GitHub and click on the **Pull requests** tab. Then, click on the **New pull request** button.
+
+Ensure that the **base** branch is the main branch of the original repository, and the **compare** branch is the one you've been working on. Finally, click on the **Create pull request** button, add a descriptive title and a detailed description of your changes, and submit the pull request.
+
+#### Step 7: Address feedback (if necessary)
+If there are any comments or feedback from the repository maintainers, address them and push the requested changes to your branch. This will automatically update the pull request.
+
+Thanks for any contributions 😉
 
 ## Project Overview
 
