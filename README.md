@@ -1,12 +1,12 @@
-# Interactive JavaScript Website
+# Web Fundamentals Course
 
-This project is an interactive JavaScript website that demonstrates various concepts and functionalities using HTML, CSS, and JavaScript. The primary goal of this project is to help beginners understand how JavaScript can be used to add interactivity and dynamic content to a webpage.
+This project is an interactive JavaScript website that demonstrates various concepts and functionalities taught in the QA Web Fundamentals course. The primary goal of this project is to help beginners understand how JavaScript can be used to add interactivity and dynamic content to a webpage.
 
 Contributions are welcomed! If you have suggestions for improvements or additional documentation, please feel free to submit a pull request or open an issue.
 
 ## Table of Contents
 
-- [Interactive JavaScript Website](#interactive-javascript-website)
+- [Web Fundamentals Course](#web-fundamentals-course)
   - [Table of Contents](#table-of-contents)
   - [Tech Stack](#tech-stack)
   - [Project Overview](#project-overview)
