@@ -353,6 +353,7 @@ form button {
 	bottom: 2%;
 	right: 2%;
 	display: none;
+	z-index: 99;
 
 	background-color: #00ADB5;
 	border-radius: 8px;
