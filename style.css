@@ -402,3 +402,23 @@ form button {
 	width: 100%;
 	max-width: 100%;
 }
+
+/* JS API Requests */
+
+#api-requests {
+	padding: 5% 15%;
+	margin: 5% 0;
+	background-color: #EEEEEE;
+}
+
+#api-requests p {
+	margin-bottom: 70px;
+}
+
+
+#dog-image {
+	height: 350px;
+	border-radius: 8px;
+	border: 5px solid #222831;
+	object-fit: cover;
+}

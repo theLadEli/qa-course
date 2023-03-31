@@ -95,3 +95,17 @@ function showButton() {
 function hideButton() {
     document.getElementById('js-events-p').style.display = "none";
 }
+
+// JS API Requests
+var dogImage = document.getElementById('dog-image');
+
+function newDogImage() {
+    fetch('https://dog.ceo/api/breeds/image/random')
+  .then(response => response.json())
+  .then(data => {
+    dogImage.src = data.message;
+  })
+  .catch(error => console.error(error));
+}
+
+newDogImage()
