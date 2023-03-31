@@ -115,4 +115,4 @@ To get started with the project, clone the repository and open `index.html` in y
 
 ## Contributing
 
-Contributions to improve the project or expand the documentation are encouraged! To contribute,
+Did I miss anything? Scroll back up to the top of the page and feel free to contribute using the instructions provided. Thanks!
