@@ -2,6 +2,7 @@
 
 This project is an interactive JavaScript website that demonstrates various concepts and functionalities taught in the QA Web Fundamentals course. The primary goal of this project is to help beginners understand how JavaScript can be used to add interactivity and dynamic content to a webpage.
 
+#### You can view the live website here - https://theladeli.github.io/qa-course/
 
 ## Table of Contents
 - [Web Fundamentals Course](#web-fundamentals-course)
